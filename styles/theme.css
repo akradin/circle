@@ -1,0 +1,162 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  color: white; }
+
+nav {
+  display: flex;
+  align-items: stretch;
+  background-color: RGBA(85, 172, 238, 0.5); }
+  nav a img {
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1 0 0;
+    height: 60px;
+    transform: translate(10px, 10px); }
+  nav div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1 0 0; }
+    nav div button {
+      border: 1px solid RGBA(255, 255, 255, 0.6);
+      color: white;
+      background: transparent;
+      height: 50px;
+      width: 140px;
+      border-radius: 5px;
+      font-size: 16px;
+      margin: 10px 20px 0 0;
+      font-family: "Roboto", sans-serif;
+      transition: .5s; }
+    nav div button:hover {
+      background-color: RGBA(255, 255, 255, 0.3);
+      border: none; }
+    nav div a:nth-of-type(3) {
+      text-decoration: none; }
+    nav div span {
+      font-size: 16px;
+      margin-right: 10px;
+      font-family: "Roboto", sans-serif;
+      color: RGBA(255, 255, 255, 0.3); }
+
+.content {
+  display: flex;
+  justify-content: center;
+  background-color: RGBA(85, 172, 238, 0.5); }
+
+.phone-image {
+  transform: translate(-50px, -20px); }
+
+.information {
+  transform: translate(20px, -80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif; }
+  .information hr {
+    width: 100px;
+    border: 1px solid white;
+    margin-bottom: 15px; }
+  .information p:nth-of-type(1) {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: RGBA(255, 255, 255, 0.6); }
+  .information p:nth-of-type(2) {
+    font-size: 30px; }
+  .information div {
+    display: flex;
+    margin-top: 15px; }
+    .information div a {
+      border: none;
+      background: white;
+      height: 50px;
+      width: 140px;
+      border-radius: 5px;
+      font-size: 16px;
+      margin: 0 10px 0 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-decoration: none;
+      transition: .5s;
+      color: RGBA(105, 129, 184, 1);
+      transform: translateY(15px); }
+      .information div a img {
+        transform: translateX(-5px); }
+      .information div a span {
+        transform: translateX(5px); }
+        .information div a span strong {
+          font-weight: bold; }
+    .information div a:hover {
+      background-color: white;
+      color: RGBA(6, 176, 125, 1); }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  color: RGBA(173, 173, 173, 1);
+  transform: translateY(30px); }
+  footer p, footer div {
+    display: inline; }
+  footer p {
+    margin-left: 15px; }
+  footer div:nth-of-type(1) a {
+    text-decoration: none;
+    color: RGBA(173, 173, 173, 1);
+    cursor: pointer; }
+  footer div:nth-of-type(2) {
+    margin-right: 15px; }
+    footer div:nth-of-type(2) a {
+      margin-right: 10px; }
+
+/*# sourceMappingURL=theme.css.map */
