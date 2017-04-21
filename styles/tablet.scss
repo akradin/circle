@@ -1,0 +1,14 @@
+// both of these move the iPhone image down and to the left
+// the first is for tablets, the second for responsive desktop use
+
+@media (min-width : 768px)  and (max-device-width : 1024px){
+  .phone-image {
+    transform: translateY(0px);
+  }
+}
+
+@media (max-width : 1060px){
+  .phone-image {
+    transform: translateY(0px);
+  }
+}

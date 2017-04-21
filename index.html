@@ -3,18 +3,39 @@
   <head>
     <meta charset="utf-8">
     <title>Circle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/styles/theme.css">
   </head>
   <body>
-  <div>
+    <div class="header-photo">
     <nav>
       <a href="https://www.circle.com/en" target="_blank">
         <img src="/assets/Logo.png" alt="circle-logo">
       </a>
       <div>
-        <a href="https://www.circle.com/signup" target="_blank"><button>Sign Up</button></a>
-        <a href="https://www.circle.com/signin" target="_blank"><button>Sign In</button></a>
-        <a href="#"><span class="language">EN</span></a>
+        <a href="https://www.circle.com/signup" target="_blank" class="log-in">
+          <button>Sign Up</button>
+        </a>
+        <a href="https://www.circle.com/signin" target="_blank" class="log-in">
+          <button>Sign In</button>
+        </a>
+        <button class="language-button" onclick="showLanguages()">EN</button>
+        <div class="languages" id="dropdown">
+          <a href="https://www.circle.com/en" target="_blank">English - US</a>
+          <a href="https://www.circle.com/en-gb" target="_blank">English - UK</a>
+          <a href="https://www.circle.com/es" target="_blank">Español</a>
+          <a href="https://www.circle.com/fr" target="_blank">Francais</a>
+          <a href="https://www.circle.com/de" target="_blank">Deutsch</a>
+          <a href="https://www.circle.com/pt" target="_blank">Português</a>
+          <a href="https://www.circle.com/it" target="_blank">Italiano</a>
+          <a href="https://www.circle.com/zh" target="_blank">简体中文</a>
+          <a href="https://www.circle.com/ja" target="_blank">日本語</a>
+        </div>
+      <button id="mobile-button" onclick="userOptions()"></button>
+      <label for="mobile-button" id="menu-icon">
+        <img src="/assets/menu-icon.png" alt="menu-icon">
+      </label>
+    </div>
     </nav>
     <section class="content">
       <div class="phone-image">
@@ -22,12 +43,53 @@
       </div>
       <div class="information">
         <hr>
-        <p> US DOLLARS AND POUNDS </p>
-        <p>
-          Send & receive money.
-          <br>
-          Secure, instant & free.
-        </p>
+        <div class="scroll-content">
+          <p> US DOLLARS AND POUNDS </p>
+          <p>
+            Send & receive money.
+          </p>
+          <p>
+            Secure, instant & free.
+          </p>
+        </div>
+        <div class="scroll-content">
+          <p> US DOLLARS AND POUNDS </p>
+          <p>
+            Split the cost of drinks.
+          </p>
+          <p>
+            Keep the friendship solid.
+          </p>
+        </div>
+        <div class="scroll-content">
+          <p> US DOLLARS AND POUNDS </p>
+          <p>
+            Bright idea: text your roomie
+            <br>
+            half the electric bill
+          </p>
+          <p>
+            ⚡️💡🔌💰💵💸
+          </p>
+        </div>
+        <div class="scroll-content">
+          <p> US DOLLARS AND POUNDS </p>
+          <p>
+            Split that pizza.
+          </p>
+          <p>
+            🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕
+          </p>
+        </div>
+        <div class="scroll-content">
+          <p> US DOLLARS AND POUNDS </p>
+          <p>
+            Remind people to pay for Netflix
+          </p>
+          <p>
+            <img src="/assets/liz-lemon.gif">
+          </p>
+        </div>
         <div>
           <a href="https://play.google.com/store/apps/details?id=com.circle.android&_branch_match_id=383787828727906333" target="_blank">
             <span>Get it on <br><strong>Android</strong></span>
@@ -37,7 +99,15 @@
             <span>Get it on <br><strong>Apple</strong></span>
             <img src="/assets/apple-icon.png" alt="apple-icon">
           </a>
+          <button class="app-button">GET THE APP</button>
         </div>
+      </div>
+      <div class="scroll-buttons">
+        <button class="dots" onclick="currentContent(1)">•</button>
+        <button class="dots" onclick="currentContent(2)">•</button>
+        <button class="dots" onclick="currentContent(3)">•</button>
+        <button class="dots" onclick="currentContent(4)">•</button>
+        <button class="dots" onclick="currentContent(5)">•</button>
       </div>
     </section>
   </div>
@@ -56,5 +126,77 @@
         <a href="https://www.linkedin.com/company-beta/3509899/?pathWildcard=3509899" target="_blank"><img src="/assets/LinkedIn.png" alt="linkedin-logo"></a>
       </div>
     </footer>
+    <footer class="mobile-footer">
+      <div>
+        <a href="https://www.circle.com/en/about" target="_blank">About</a> /
+        <a href="https://blog.circle.com/" target="_blank">Blog</a> /
+        <a href="https://www.circle.com/en/careers" target="_blank">Careers</a> /
+        <a href="https://www.circle.com/en/legal/us-privacy" target="_blank">Privacy</a> /
+        <a href="https://www.circle.com/en/legal/us-user-agreement" target="_blank">Terms</a> /
+      </div>
+      <div>
+        <a href="https://www.facebook.com/circlepay/" target="_blank"><img src="/assets/Facebook.png" alt="facebook-logo"></a>
+        <a href="https://twitter.com/circlepay" target="_blank"><img src="/assets/Twitter.png" alt="twitter-logo"></a>
+        <a href="https://www.linkedin.com/company-beta/3509899/?pathWildcard=3509899" target="_blank"><img src="/assets/LinkedIn.png" alt="linkedin-logo"></a>
+      </div>
+      <p>© 2014 Circle Inernet Financial Limited</p>
+    </footer>
+    <script>
+    // show languages on click
+    function showLanguages (){
+      document.getElementById('dropdown').classList.toggle("show");
+    };
+
+    // hide languages when clicking anywhere else
+    window.onclick = function(event) {
+    if (!event.target.matches('.language-button')) {
+      let dropdown = document.getElementsByClassName("languages");
+        if (dropdown[0].classList.contains('show')) {
+          dropdown[0].classList.remove('show');
+        }
+    }
+  };
+
+  // scroll through content
+  let slide = 1;
+  scrollContent(slide);
+
+  function countContent(n){
+    scrollContent(slide += n);
+  }
+
+  function currentContent(n){
+    scrollContent(slide = n)
+  }
+
+  function scrollContent(n){
+    let content = document.getElementsByClassName('scroll-content');
+    let dots = document.getElementsByClassName('dots');
+    if (n > content.length){
+      slide = 1;
+    }
+    if (n < 1){
+      slide = content.length;
+    }
+    for (let i = 0; i < content.length; i++) {
+      content[i].style.display = 'none';
+    }
+    for (let i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" bright-dot", "");
+    }
+    content[slide - 1].style.display = "block";
+    dots[slide - 1].className += " bright-dot";
+  }
+
+  // rotate menu icon and show sign-up/in options on mobile
+    function userOptions(){
+      document.getElementById('menu-icon').classList.toggle('rotate-icon');
+      let buttons = document.getElementsByClassName('log-in');
+      for (let i = 0; i < buttons.length; i++) {
+      buttons[i].classList.toggle('show-buttons');
+    }
+  };
+
+    </script>
   </body>
 </html>

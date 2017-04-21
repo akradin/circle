@@ -2,10 +2,14 @@
 body {
   color: white; }
 
+.header-photo {
+  background-image: url("../assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 nav {
   display: flex;
-  align-items: stretch;
-  background-color: RGBA(85, 172, 238, 0.5); }
+  align-items: stretch; }
   nav a img {
     align-items: center;
     justify-content: flex-start;
@@ -33,36 +37,81 @@ nav {
       border: none; }
     nav div a:nth-of-type(3) {
       text-decoration: none; }
-    nav div span {
-      font-size: 16px;
-      margin-right: 10px;
-      font-family: "Roboto", sans-serif;
-      color: RGBA(255, 255, 255, 0.3); }
+    nav div img, nav div #mobile-button {
+      height: 30px;
+      display: none;
+      margin: 10px 10px; }
 
+.language-button {
+  border: none;
+  font-size: 16px;
+  margin-right: 10px;
+  font-family: "Roboto", sans-serif;
+  color: RGBA(255, 255, 255, 0.3);
+  width: 30px; }
+
+.languages {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+  margin-top: 105px;
+  background-color: RGBA(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px; }
+  .languages a {
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    color: RGBA(6, 176, 125, 1); }
+
+.show {
+  display: block;
+  animation-name: slidein;
+  animation-duration: 1s; }
+
+@keyframes slidein {
+  from {
+    right: -100px; }
+  to {
+    right: 0; } }
 .content {
   display: flex;
-  justify-content: center;
-  background-color: RGBA(85, 172, 238, 0.5); }
+  justify-content: center; }
 
 .phone-image {
   transform: translate(-50px, -20px); }
 
 .information {
-  transform: translate(20px, -80px);
+  transform: translate(50px, -70px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: "Roboto", sans-serif; }
   .information hr {
-    width: 100px;
+    width: 80px;
+    opacity: .5;
     border: 1px solid white;
     margin-bottom: 15px; }
+  .information .scroll-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .information p:nth-of-type(1) {
+    text-align: center;
     font-size: 15px;
     margin-bottom: 20px;
     color: RGBA(255, 255, 255, 0.6); }
   .information p:nth-of-type(2) {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px; }
+  .information p:nth-of-type(3) {
+    text-align: center;
     font-size: 30px; }
   .information div {
     display: flex;
@@ -92,6 +141,24 @@ nav {
       background-color: white;
       color: RGBA(6, 176, 125, 1); }
 
+.scroll-buttons {
+  transform: translate(280px, 200px);
+  display: flex;
+  flex-direction: column; }
+  .scroll-buttons button {
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 15px;
+    opacity: 0.5; }
+
+.bright-dot {
+  opacity: 1 !important; }
+
+.app-button {
+  display: none; }
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -111,5 +178,8 @@ footer {
     margin-right: 15px; }
     footer div:nth-of-type(2) a {
       margin-right: 10px; }
+
+.mobile-footer {
+  display: none; }
 
 /*# sourceMappingURL=main.css.map */
