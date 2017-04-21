@@ -1,13 +1,16 @@
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
 
   .header-photo {
-      background-size: auto;
+    background-size: cover;
+    background-position: -70px;
   }
 
+// all changes to the nav bar for mobile views
   nav {
     a {
       img {
-      height: 35px;
+        height: 80px;
+        margin: 20px 20px;
       }
     }
      div {
@@ -21,29 +24,33 @@
          display: block;
        }
        button {
-         width:60px;
-         height: 20px;
-         text-decoration: none;
-         font-size: 12px
+         width: 100px;
+         height: 70px;
+         font-size: 25px;
        }
      }
   }
+  // rotates the icon on click and shows the log out buttons
   .rotate-icon {
     transition: .5s;
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
   }
 
   .show-buttons {
     display: flex;
     flex-direction: column;
   }
+
+  // all changes to the content div. Removal of buttons that allow scrolling
+  // through the different information panels available on desktop
   .content {
     flex-direction: column-reverse;
     align-items: center;
     overflow: hidden;
+    height: 750px;
   }
   .information {
-    transform: translateY(150px);
+    transform: translateY(50px);
     br {
       margin-bottom: 15px;
     }
@@ -53,27 +60,32 @@
       }
     }
   }
-.app-button {
-  display: block;
-  border: none;
-  background: white;
-  height: 50px;
-  width: 140px;
-  border-radius: 5px;
-  font-size: 16px;
-  margin: 0 10px 0 10px;
-  justify-content: space-between;
-  align-items: center;
-  text-decoration: none;
-  transition: .5s;
-  color: $icon-blue;
-  transform: translateY(15px);
-}
+  .app-button {
+    display: block;
+    border: none;
+    background: white;
+    height: 50px;
+    width: 140px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 0 10px 0 10px;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    transition: .5s;
+    color: $icon-blue;
+    transform: translateY(15px);
+  }
 
   .phone-image {
-    transform: translateY(300px);
+    transform: translateY(170px);
+    // display: none;
   }
   footer {
+    display: none;
+  }
+
+  .scroll-buttons {
     display: none;
   }
 

@@ -85,9 +85,11 @@ nav {
     nav div a:nth-of-type(3) {
       text-decoration: none; }
     nav div img, nav div #mobile-button {
-      height: 30px;
+      height: 80px;
       display: none;
-      margin: 10px 10px; }
+      margin: 20px 20px;
+      transition: all .5s;
+      transform: rotate(0deg); }
 
 .language-button {
   border: none;
@@ -126,13 +128,15 @@ nav {
     right: 0; } }
 .content {
   display: flex;
-  justify-content: center; }
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center; }
 
 .phone-image {
-  transform: translate(-50px, -20px); }
+  transform: translate(300px, -20px); }
 
 .information {
-  transform: translate(50px, -70px);
+  transform: translate(70px, -20px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -189,7 +193,7 @@ nav {
       color: RGBA(6, 176, 125, 1); }
 
 .scroll-buttons {
-  transform: translate(280px, 200px);
+  transform: translateX(-20px);
   display: flex;
   flex-direction: column; }
   .scroll-buttons button {
@@ -232,15 +236,33 @@ footer {
 @media (min-width: 768px) and (max-device-width: 1024px) {
   .phone-image {
     transform: translateY(0px); } }
-@media (max-width: 1060px) {
+@media (max-width: 1205px) {
   .phone-image {
-    transform: translateY(0px); } }
+    transform: translateX(150px); } }
+@media (max-width: 900px) {
+  .phone-image {
+    transform: translateX(100px); } }
+@media (max-width: 830px) {
+  .information {
+    transform: translateX(-40px); }
+    .information div {
+      flex-direction: column; }
+      .information div a {
+        margin-top: 10px; }
+
+  .phone-image {
+    transform: translateX(0); }
+
+  .scroll-buttons {
+    display: none; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .header-photo {
-    background-size: auto; }
+    background-size: cover;
+    background-position: -70px; }
 
   nav a img {
-    height: 35px; }
+    height: 80px;
+    margin: 20px 20px; }
   nav div a, nav div .language-button {
     display: none; }
   nav div a {
@@ -248,14 +270,13 @@ footer {
   nav div img, nav div label {
     display: block; }
   nav div button {
-    width: 60px;
-    height: 20px;
-    text-decoration: none;
-    font-size: 12px; }
+    width: 100px;
+    height: 70px;
+    font-size: 25px; }
 
   .rotate-icon {
     transition: .5s;
-    transform: rotate(90deg); }
+    transform: rotate(-90deg); }
 
   .show-buttons {
     display: flex;
@@ -264,10 +285,11 @@ footer {
   .content {
     flex-direction: column-reverse;
     align-items: center;
-    overflow: hidden; }
+    overflow: hidden;
+    height: 750px; }
 
   .information {
-    transform: translateY(150px); }
+    transform: translateY(50px); }
     .information br {
       margin-bottom: 15px; }
     .information div a {
@@ -290,9 +312,12 @@ footer {
     transform: translateY(15px); }
 
   .phone-image {
-    transform: translateY(300px); }
+    transform: translateY(170px); }
 
   footer {
+    display: none; }
+
+  .scroll-buttons {
     display: none; }
 
   .mobile-footer {

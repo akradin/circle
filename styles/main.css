@@ -38,9 +38,11 @@ nav {
     nav div a:nth-of-type(3) {
       text-decoration: none; }
     nav div img, nav div #mobile-button {
-      height: 30px;
+      height: 80px;
       display: none;
-      margin: 10px 10px; }
+      margin: 20px 20px;
+      transition: all .5s;
+      transform: rotate(0deg); }
 
 .language-button {
   border: none;
@@ -79,13 +81,15 @@ nav {
     right: 0; } }
 .content {
   display: flex;
-  justify-content: center; }
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center; }
 
 .phone-image {
-  transform: translate(-50px, -20px); }
+  transform: translate(300px, -20px); }
 
 .information {
-  transform: translate(50px, -70px);
+  transform: translate(70px, -20px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -142,7 +146,7 @@ nav {
       color: RGBA(6, 176, 125, 1); }
 
 .scroll-buttons {
-  transform: translate(280px, 200px);
+  transform: translateX(-20px);
   display: flex;
   flex-direction: column; }
   .scroll-buttons button {

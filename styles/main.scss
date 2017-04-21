@@ -27,11 +27,13 @@ nav {
       height: 60px;
       transform: translate(10px, 10px);
     }
+
     div {
       display: flex;
       align-items: center;
       justify-content: flex-end;
       flex: 1 0 0;
+      // styles for user buttons
       button {
         border: 1px solid $trans-white;
         color: white;
@@ -44,21 +46,27 @@ nav {
         font-family: $primary-font;
         transition: .5s;
       }
+
       button:hover {
         background-color: $super-trans-white;
         border: none;
       }
+
       a:nth-of-type(3) {
-        text-decoration: none;
+        text-decoration: none; //remove underline from links
       }
-      img, #mobile-button{
-        height: 30px;
+      img, #mobile-button{ //hamburger menu for mobile
+        height: 80px;
         display: none;
-        margin: 10px 10px;
+        margin: 20px 20px;
+        transition: all .5s;
+        transform: rotate(0deg);
       }
     }
   }
 
+
+// button that links to other langauge sites
 .language-button {
     border: none;
     font-size: 16px;
@@ -68,7 +76,7 @@ nav {
     width: 30px;
 }
 
-
+// dropdown that appears from above button
 .languages {
   display: none;
   position: absolute;
@@ -89,6 +97,7 @@ nav {
   }
 }
 
+// animation for dropdown coming into screen
 .show {
   display: block;
   animation-name: slidein;
@@ -99,29 +108,33 @@ nav {
   from {
     right: -100px;
   }
-
   to {
     right: 0;
   }
 }
 
+// START OF VIEW BELOW NAV BAR
+
+// Set this entire section to flex
 .content {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
 }
 
 .phone-image {
-  transform: translate(-50px, -20px);
+  transform: translate(300px, -20px);
 }
-
+// ^ and v just move divs to appropriate place
 .information {
-  transform: translate(50px, -70px);
+  transform: translate(70px, -20px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: $primary-font;
-  hr {
+  hr {                          //all of the content within the infromation div
     width: 80px;
     opacity: .5;
     border: 1px solid white;
@@ -132,6 +145,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
   }
   p:nth-of-type(1) {
     text-align: center;
@@ -183,8 +197,10 @@ nav {
   }
 }
 
+// the dots that enable scrolling through the info divs
+
 .scroll-buttons {
-  transform: translate(280px, 200px);
+  transform: translateX(-20px);
   display: flex;
   flex-direction: column;
   button {
@@ -197,13 +213,15 @@ nav {
   }
 }
 
-.bright-dot {
+.bright-dot { //changes color of selected dot
   opacity: 1 !important;
 }
 
-.app-button {
+.app-button { //hides button that is displayed on mobile
   display: none;
 }
+
+//START OF FOOTER
 
 footer {
   display: flex;
@@ -231,6 +249,8 @@ footer {
   }
 }
 
+
+// mobile footer is in a different order
 .mobile-footer {
   display: none;
 }

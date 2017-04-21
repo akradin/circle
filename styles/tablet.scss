@@ -1,5 +1,5 @@
 // both of these move the iPhone image down and to the left
-// the first is for tablets, the second for responsive desktop use
+// the first is for tablets
 
 @media (min-width : 768px)  and (max-device-width : 1024px){
   .phone-image {
@@ -7,8 +7,36 @@
   }
 }
 
-@media (max-width : 1060px){
+// adjustments for scaling the browser width down, prevents overlay of
+// informational text and phone icon
+
+@media (max-width : 1205px){
   .phone-image {
-    transform: translateY(0px);
+    transform: translateX(150px);
+  }
+}
+
+@media (max-width : 900px){
+  .phone-image {
+    transform: translateX(100px);
+  }
+}
+
+// change buttons to be in column format, push phone to left edge
+@media (max-width : 830px){
+  .information {
+    transform: translateX(-40px);
+    div {
+      flex-direction: column;
+      a {
+        margin-top: 10px;
+      }
+    }
+  }
+  .phone-image {
+    transform: translateX(0);
+  }
+  .scroll-buttons {
+    display: none;
   }
 }

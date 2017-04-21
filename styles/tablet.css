@@ -1,8 +1,24 @@
 @media (min-width: 768px) and (max-device-width: 1024px) {
   .phone-image {
     transform: translateY(0px); } }
-@media (max-width: 1060px) {
+@media (max-width: 1205px) {
   .phone-image {
-    transform: translateY(0px); } }
+    transform: translateX(150px); } }
+@media (max-width: 900px) {
+  .phone-image {
+    transform: translateX(100px); } }
+@media (max-width: 830px) {
+  .information {
+    transform: translateX(-40px); }
+    .information div {
+      flex-direction: column; }
+      .information div a {
+        margin-top: 10px; }
+
+  .phone-image {
+    transform: translateX(0); }
+
+  .scroll-buttons {
+    display: none; } }
 
 /*# sourceMappingURL=tablet.css.map */

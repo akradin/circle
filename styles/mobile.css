@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$icon-blue".
-        on line 69 of styles/mobile.scss
+        on line 76 of styles/mobile.scss
 
-64:   margin: 0 10px 0 10px;
-65:   justify-content: space-between;
-66:   align-items: center;
-67:   text-decoration: none;
-68:   transition: .5s;
-69:   color: $icon-blue;
-70:   transform: translateY(15px);
-71: }
-72: 
-73:   .phone-image {
-74:     transform: translateY(300px);
+71:     margin: 0 10px 0 10px;
+72:     justify-content: space-between;
+73:     align-items: center;
+74:     text-decoration: none;
+75:     transition: .5s;
+76:     color: $icon-blue;
+77:     transform: translateY(15px);
+78:   }
+79: 
+80:   .phone-image {
+81:     transform: translateY(170px);
 
 Backtrace:
-styles/mobile.scss:69
+styles/mobile.scss:76
 /Users/AlexKradin/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Users/AlexKradin/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
 /Users/AlexKradin/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -80,4 +80,4 @@ styles/mobile.scss:69
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$icon-blue\".\A         on line 69 of styles/mobile.scss\A \A 64:   margin: 0 10px 0 10px;\A 65:   justify-content: space-between;\A 66:   align-items: center;\A 67:   text-decoration: none;\A 68:   transition: .5s;\A 69:   color: $icon-blue;\A 70:   transform: translateY(15px);\A 71: }\A 72: \A 73:   .phone-image {\A 74:     transform: translateY(300px);"; }
+  content: "Error: Undefined variable: \"$icon-blue\".\A         on line 76 of styles/mobile.scss\A \A 71:     margin: 0 10px 0 10px;\A 72:     justify-content: space-between;\A 73:     align-items: center;\A 74:     text-decoration: none;\A 75:     transition: .5s;\A 76:     color: $icon-blue;\A 77:     transform: translateY(15px);\A 78:   }\A 79: \A 80:   .phone-image {\A 81:     transform: translateY(170px);"; }
