@@ -2,14 +2,14 @@
 
   .header-photo {
     background-size: cover;
-    background-position: -70px;
+    background-position: -670px;
   }
 
 // all changes to the nav bar for mobile views
   nav {
     a {
       img {
-        height: 80px;
+        height: 100px;
         margin: 20px 20px;
       }
     }
@@ -24,7 +24,7 @@
          display: block;
        }
        button {
-         width: 100px;
+         width: 120px;
          height: 70px;
          font-size: 25px;
        }
@@ -47,16 +47,25 @@
     flex-direction: column-reverse;
     align-items: center;
     overflow: hidden;
-    height: 750px;
+    height: 1300px;
   }
   .information {
-    transform: translateY(50px);
+    transform: translateY(400px);
     br {
       margin-bottom: 15px;
+    }
+    hr {
+      margin-bottom: 40px;
     }
     div {
       a {
         display: none;
+      }
+      p:nth-of-type(1){
+        font-size: 30px
+      }
+      p:nth-of-type(2), p:nth-of-type(3){
+        font-size: 40px
       }
     }
   }
@@ -64,10 +73,10 @@
     display: block;
     border: none;
     background: white;
-    height: 50px;
-    width: 140px;
+    height: 70px;
+    width: 300px;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 25px;
     margin: 0 10px 0 10px;
     justify-content: space-between;
     align-items: center;
@@ -78,8 +87,7 @@
   }
 
   .phone-image {
-    transform: translateY(170px);
-    // display: none;
+    transform: translateY(310px);
   }
   footer {
     display: none;
@@ -94,13 +102,13 @@
     flex-direction: column;
     align-items: center;
     div, p {
-      margin-bottom: 35px;
+      margin-bottom: 65px;
     }
     div {
-      font-size: 20px;
+      font-size: 30px;
     }
     img {
-      height: 20px;
+      height: 30px;
     }
   }
 }

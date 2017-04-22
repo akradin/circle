@@ -261,10 +261,10 @@ footer {
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .header-photo {
     background-size: cover;
-    background-position: -70px; }
+    background-position: -670px; }
 
   nav a img {
-    height: 80px;
+    height: 100px;
     margin: 20px 20px; }
   nav div a, nav div .language-button {
     display: none; }
@@ -273,7 +273,7 @@ footer {
   nav div img, nav div label {
     display: block; }
   nav div button {
-    width: 100px;
+    width: 120px;
     height: 70px;
     font-size: 25px; }
 
@@ -289,23 +289,29 @@ footer {
     flex-direction: column-reverse;
     align-items: center;
     overflow: hidden;
-    height: 750px; }
+    height: 1300px; }
 
   .information {
-    transform: translateY(50px); }
+    transform: translateY(400px); }
     .information br {
       margin-bottom: 15px; }
+    .information hr {
+      margin-bottom: 40px; }
     .information div a {
       display: none; }
+    .information div p:nth-of-type(1) {
+      font-size: 30px; }
+    .information div p:nth-of-type(2), .information div p:nth-of-type(3) {
+      font-size: 40px; }
 
   .app-button {
     display: block;
     border: none;
     background: white;
-    height: 50px;
-    width: 140px;
+    height: 70px;
+    width: 300px;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 25px;
     margin: 0 10px 0 10px;
     justify-content: space-between;
     align-items: center;
@@ -315,7 +321,7 @@ footer {
     transform: translateY(15px); }
 
   .phone-image {
-    transform: translateY(170px); }
+    transform: translateY(310px); }
 
   footer {
     display: none; }
@@ -328,10 +334,10 @@ footer {
     flex-direction: column;
     align-items: center; }
     .mobile-footer div, .mobile-footer p {
-      margin-bottom: 35px; }
+      margin-bottom: 65px; }
     .mobile-footer div {
-      font-size: 20px; }
+      font-size: 30px; }
     .mobile-footer img {
-      height: 20px; } }
+      height: 30px; } }
 
 /*# sourceMappingURL=theme.css.map */
