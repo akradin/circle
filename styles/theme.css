@@ -111,15 +111,17 @@ nav {
   border-radius: 5px; }
   .languages a {
     font-family: "Roboto", sans-serif;
+    color: RGBA(6, 176, 125, 1);
     text-decoration: none;
     display: block;
-    margin-bottom: 10px;
-    color: RGBA(6, 176, 125, 1); }
+    margin-top: 10px;
+    margin-bottom: 10px; }
 
 .show {
   display: block;
   animation-name: slidein;
-  animation-duration: 1s; }
+  animation-duration: 1s;
+  transform: translateY(70px); }
 
 @keyframes slidein {
   from {
@@ -164,33 +166,34 @@ nav {
   .information p:nth-of-type(3) {
     text-align: center;
     font-size: 30px; }
-  .information div {
+
+.download-buttons {
+  display: flex;
+  margin-top: 15px; }
+  .download-buttons a {
+    border: none;
+    background: white;
+    height: 50px;
+    width: 140px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 0 10px 0 10px;
     display: flex;
-    margin-top: 15px; }
-    .information div a {
-      border: none;
-      background: white;
-      height: 50px;
-      width: 140px;
-      border-radius: 5px;
-      font-size: 16px;
-      margin: 0 10px 0 10px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      text-decoration: none;
-      transition: .5s;
-      color: RGBA(105, 129, 184, 1);
-      transform: translateY(15px); }
-      .information div a img {
-        transform: translateX(-5px); }
-      .information div a span {
-        transform: translateX(5px); }
-        .information div a span strong {
-          font-weight: bold; }
-    .information div a:hover {
-      background-color: white;
-      color: RGBA(6, 176, 125, 1); }
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    transition: .5s;
+    color: RGBA(105, 129, 184, 1);
+    transform: translateY(15px); }
+    .download-buttons a img {
+      transform: translateX(-5px); }
+    .download-buttons a span {
+      transform: translateX(5px); }
+      .download-buttons a span strong {
+        font-weight: bold; }
+  .download-buttons a:hover {
+    background-color: white;
+    color: RGBA(6, 176, 125, 1); }
 
 .scroll-buttons {
   transform: translateX(-20px);

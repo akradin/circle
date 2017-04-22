@@ -1,11 +1,12 @@
-#Code Challenge for Circle
+# Code Challenge for Circle
 
-#Approach
+# Approach
 I wanted to try a couple of different things with this challenge:
 1. Use only vanilla JavaScript
 2. Use flexbox to handle most of the responsiveness
 3. Reduce specifity
 
+A slightly more in-depth explanation of my reasoning
 1. I wanted to limit myself to vanilla JS because I am already comfortable with
 my proficiency in jQuery
 2. I have only used flexbox a couple of times but I figured it would eliminate
